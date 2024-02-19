@@ -1,6 +1,8 @@
 module github.com/project-alvarium/scoring-apps-go
 
-go 1.17
+go 1.21
+
+toolchain go1.21.5
 
 require (
 	github.com/arangodb/go-driver v1.3.1
@@ -8,7 +10,6 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/oklog/ulid/v2 v2.0.2
 	github.com/project-alvarium/alvarium-sdk-go v0.0.0-20230622002945-0532be91d69b
-	github.com/project-alvarium/provider-logging v0.0.0-20210720200405-d8d2146a4f14
 	go.mongodb.org/mongo-driver v1.8.4
 )
 
@@ -29,3 +30,5 @@ require (
 	golang.org/x/text v0.3.5 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/project-alvarium/alvarium-sdk-go => github.com/o-eissa/alvarium-sdk-go v0.0.0-20240219143657-29c9b7e6cf79
